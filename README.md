@@ -12,10 +12,13 @@ Make sure you have Python 3.7 [installed locally](http://install.python-guide.or
 $ git clone https://github.com/heroku/python-getting-started.git
 $ cd python-getting-started
 
-$ python3 -m venv getting-started
-$ pip install -r requirements.txt
+# $ python3 -m venv getting-started
+python -m venv getting-started
+# $ pip install -r requirements.txt
+pip install -r requirements.txt
 
-$ createdb python_getting_started
+# $ createdb python_getting_started
+createdb python_getting_started
 
 $ python manage.py migrate
 $ python manage.py collectstatic
@@ -43,3 +46,20 @@ or
 For more information about using Python on Heroku, see these Dev Center articles:
 
 - [Python on Heroku](https://devcenter.heroku.com/categories/python)
+
+
+
+
+
+
+<!-- …or create a new repository on the command line -->
+echo "# python-django-sqlite3-heroku" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/jav2074/python-django-sqlite3-heroku.git
+git push -u origin master
+                
+<!-- …or push an existing repository from the command line -->
+git remote add origin https://github.com/jav2074/python-django-sqlite3-heroku.git
+git push -u origin master
