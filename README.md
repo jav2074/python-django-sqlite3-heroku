@@ -63,3 +63,19 @@ git push -u origin master
 <!-- …or push an existing repository from the command line -->
 git remote add origin https://github.com/jav2074/python-django-sqlite3-heroku.git
 git push -u origin master
+
+
+
+git remote set-url origin https://github.com/jav2074/python-django-sqlite3-heroku.git
+
+<!-- Enumerar tus remotos existentes a fin de obtener el nombre de los remotos que deseas cambiar. -->
+$ git remote -v
+> origin  git@github.com:USERNAME/REPOSITORY.git (fetch)
+> origin  git@github.com:USERNAME/REPOSITORY.git (push)
+<!-- Cambiar tu URL remota de SSH a HTTPS con el comando git remote set-url. -->
+$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+<!-- Verificar que la URL remota ha cambiado. -->
+$ git remote -v
+<!-- # Verify new remote URL -->
+> origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
+> origin  https://github.com/USERNAME/REPOSITORY.git (push)
