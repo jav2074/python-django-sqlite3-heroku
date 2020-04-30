@@ -20,8 +20,10 @@ pip install -r requirements.txt
 # $ createdb python_getting_started
 createdb python_getting_started
 
-$ python manage.py migrate
-$ python manage.py collectstatic
+# $ python manage.py migrate
+python manage.py migrate
+# $ python manage.py collectstatic
+python manage.py collectstatic
 
 $ heroku local
 ```
